@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <!-- Sign Up Title -->
+    <TextView
+        android:id="@+id/signupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="60dp" />
+
+    <!-- EditTexts and Sign Up Button (same as before) -->
+
+    <EditText
+        android:id="@+id/editUsernameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/signupTitle"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/editEmailSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/editUsernameSignup"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editEmailSignup"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editConfirmPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editPasswordSignup"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnSubmitSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@id/editConfirmPasswordSignup"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
